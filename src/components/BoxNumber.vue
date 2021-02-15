@@ -2,7 +2,7 @@
    <div class="container">
         <div class="box-container">
             <h3 class="number">
-                <p v-if="parseInt(number) < 10 && typeText == 'SECONDS' || typeText == 'MINUTES'">0{{number}}</p>
+                <p v-if="parseInt(number) < 10" > 0{{number}}</p>
                 <P v-else>{{number}}</P>
             </h3>
         </div>
@@ -59,7 +59,26 @@ export default {
         margin-top: 30px;
         font-weight: bolder;
         letter-spacing: 7px;
-    
         color: #666373;
+    }
+
+
+     /** responsive */
+
+    @media (max-width: 765px) {
+        .container{
+            width: 100px;
+        }
+       .box-container{
+           width: 70px;
+           height: 70px;
+       }
+        
+        .number > p{
+            font-size: 34px;
+        }
+        .text{
+            font-size: 8px;
+        }
     }
 </style>

@@ -23,9 +23,18 @@ export default {
 #app {
   display: grid;
   grid-template-rows: 613px auto;
+
   grid-template-areas: 'INF' 'MNT';
   background-image: linear-gradient( #2F2439, #1E1F29, #343650);
+  
+ 
 }
 
+/** responsive */
 
+    @media (max-width: 765px) {
+      #app{
+        grid-template-rows: 390px auto;
+      }
+    }
 </style>
