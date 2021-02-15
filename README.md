@@ -1,5 +1,7 @@
 # countdown-timer
 
+![alt text](src/assets/ezgif.com-gif-maker.gif)
+
 ## Project setup
 ```
 npm install

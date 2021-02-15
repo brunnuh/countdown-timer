@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <InfoComponent />
+    <PatternComponent />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PatternComponent from '@/components/Pattern-Hills.vue'
+import InfoComponent from '@/components/Info.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PatternComponent,
+    InfoComponent
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: grid;
+  grid-template-rows: 613px auto;
+  grid-template-areas: 'INF' 'MNT';
+  background-image: linear-gradient( #2F2439, #1E1F29, #343650);
 }
+
+
 </style>
